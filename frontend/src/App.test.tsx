@@ -12,4 +12,4 @@ describe('App', () => {
     render(<App />);
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
-}); 
+});

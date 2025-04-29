@@ -9,37 +9,28 @@
     "dev": "pnpm --filter \"@personal-task-manager/*\" dev",
     "dev:frontend": "pnpm --filter @personal-task-manager/frontend dev",
     "dev:backend": "pnpm --filter @personal-task-manager/backend dev",
-
     "build": "pnpm --filter \"@personal-task-manager/*\" build",
     "build:frontend": "pnpm --filter @personal-task-manager/frontend build",
     "build:backend": "pnpm --filter @personal-task-manager/backend build",
-
     "test": "pnpm --filter \"@personal-task-manager/*\" test",
     "test:frontend": "pnpm --filter @personal-task-manager/frontend test",
     "test:backend": "pnpm --filter @personal-task-manager/backend test",
-
     "test:watch": "pnpm --filter \"@personal-task-manager/*\" test:watch",
     "test:frontend:watch": "pnpm --filter @personal-task-manager/frontend test:watch",
     "test:backend:watch": "pnpm --filter @personal-task-manager/backend test:watch",
-
     "test:coverage": "pnpm --filter \"@personal-task-manager/*\" test:coverage",
     "test:frontend:coverage": "pnpm --filter @personal-task-manager/frontend test:coverage",
     "test:backend:coverage": "pnpm --filter @personal-task-manager/backend test:coverage",
-
     "test:e2e": "pnpm --filter \"@personal-task-manager/*\" test:e2e",
     "test:frontend:e2e": "pnpm --filter @personal-task-manager/frontend test:e2e",
     "test:backend:e2e": "pnpm --filter @personal-task-manager/backend test:e2e",
-
     "test:debug": "pnpm --filter \"@personal-task-manager/*\" test:debug",
     "test:frontend:debug": "pnpm --filter @personal-task-manager/frontend test:debug",
     "test:backend:debug": "pnpm --filter @personal-task-manager/backend test:debug",
-
     "lint": "pnpm --filter \"@personal-task-manager/*\" lint",
     "lint:frontend": "pnpm --filter @personal-task-manager/frontend lint",
     "lint:backend": "pnpm --filter @personal-task-manager/backend lint",
-
     "format": "prettier --write .",
-
     "typecheck": "pnpm --filter \"@personal-task-manager/*\" typecheck",
     "typecheck:frontend": "pnpm --filter @personal-task-manager/frontend typecheck",
     "typecheck:backend": "pnpm --filter @personal-task-manager/backend typecheck"
