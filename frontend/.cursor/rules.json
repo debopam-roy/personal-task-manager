@@ -1,0 +1,70 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cursor-dev/cursor/main/schemas/project.schema.json",
+    "rules": [
+      {
+        "description": "Project Architecture & Folder Structure",
+        "rule": "Follow a modular, scalable, domain-driven structure under src/. Ensure separation of concerns using folders: components, features, hooks, layouts, pages, services, store, types, utils, config, lib, assets."
+      },
+      {
+        "description": "Code Organization & Comments",
+        "rule": "Every file must have a top-level comment explaining its purpose. Complex functions should include inline comments. Use JSDoc/TSDoc style for public methods."
+      },
+      {
+        "description": "Styling Standards",
+        "rule": "Use only TailwindCSS or shadcn/ui for all styling. Do not use CSS modules, SCSS, or styled-components. Prefer utility-first approach with Tailwind, and use shadcn/ui for complex components."
+      },
+      {
+        "description": "Frontend Framework Standards",
+        "rule": "All React code must be in TypeScript. Use functional components with hooks. Adhere strictly to the latest React, React Router, and React Query (if used) documentation."
+      },
+      {
+        "description": "Code Quality Principles",
+        "rule": "Enforce SOLID, DRY, KISS, and YAGNI principles across the codebase. Avoid premature abstraction, deep nesting, or overengineering. Keep logic declarative where possible."
+      },
+      {
+        "description": "Testing Standards",
+        "rule": "Write unit tests using Vitest. Use Testing Library for React component tests. Mock APIs and dependencies using MSW or equivalent. Cover edge cases and side effects."
+      },
+      {
+        "description": "Linting & Formatting",
+        "rule": "Use ESLint with Airbnb or custom base rules tuned for TypeScript and React. Enforce Prettier for consistent formatting. Ensure lint and format runs pre-commit via Husky."
+      },
+      {
+        "description": "State Management",
+        "rule": "Use Zustand or Redux Toolkit only when necessary. Prefer React Context for local/global simple state. Do not overuse state libraries for trivial data."
+      },
+      {
+        "description": "Supabase Integration",
+        "rule": "Use Supabase client SDK with TypeScript. Define database schemas in Supabase with proper types and RLS policies. Code accessing Supabase must handle errors and loading state explicitly. Comment each Supabase function with usage intent."
+      },
+      {
+        "description": "Performance & Optimization",
+        "rule": "Avoid unnecessary re-renders via memoization (React.memo, useMemo, useCallback). Lazy load pages and components. Analyze bundle size using tools like SourceMap Explorer."
+      },
+      {
+        "description": "API and Services",
+        "rule": "Use centralized API clients. Abstract Supabase/REST/GraphQL logic inside services/. Use async/await and proper try/catch with logging and error boundaries."
+      },
+      {
+        "description": "Naming Conventions",
+        "rule": "Use consistent naming: camelCase for variables/functions, PascalCase for components, kebab-case for filenames, UPPER_CASE for constants."
+      },
+      {
+        "description": "Accessibility & Semantics",
+        "rule": "All UI must be accessible. Use semantic HTML. Ensure keyboard navigation and ARIA where appropriate."
+      },
+      {
+        "description": "Routing",
+        "rule": "Use React Router v6+ with lazy-loaded routes. Group routes under pages/, wrap them with appropriate layout components."
+      },
+      {
+        "description": "Security Best Practices",
+        "rule": "Sanitize all user input before processing. Validate on client and server side. Use environment variables securely. Avoid exposing keys or secrets in frontend code."
+      },
+      {
+        "description": "CI/CD & Deployment",
+        "rule": "Use GitHub Actions for CI. Run lint, typecheck, tests on every PR. Ensure build output is optimized and deployable via Vercel or Supabase Edge Functions."
+      }
+    ]
+  }
+  

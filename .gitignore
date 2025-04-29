@@ -1,0 +1,157 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+jspm_packages
+
+# Workspace specific node_modules
+frontend/node_modules
+backend/node_modules
+
+# Testing
+coverage
+.nyc_output
+*.lcov
+frontend/coverage
+backend/coverage
+
+# Production
+dist
+build
+.next
+out
+frontend/dist
+backend/dist
+
+# Environment files (except examples)
+.env
+.env.*
+!.env.*.example
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+.vscode-test
+.history
+*.sublime-workspace
+*.sublime-project
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Logs
+logs
+*.log
+frontend/logs
+backend/logs
+
+# Cache
+.cache
+.npm
+.eslintcache
+.stylelintcache
+.parcel-cache
+.vercel
+.turbo
+.next
+.nuxt
+.cache
+.eslintcache
+.stylelintcache
+.babelcache
+
+# Temporary files
+*.tmp
+*.temp
+.temp
+.tmp
+*.bak
+*.swp
+*~
+
+# System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+shrinkwrap.yaml
+
+# Build tools
+!.eslintrc.js
+!.prettierrc.js
+!.stylelintrc.js
+!.babel.config.js
+!.jest.config.js
+!.karma.conf.js
+!.rollup.config.js
+webpack.config.js
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Serverless directories
+.serverless/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Storybook
+storybook-static
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# Vite
+.vite
+
+# NestJS
+backend/dist
+backend/node_modules
+backend/.env
+
+# React/Vite
+frontend/dist
+frontend/node_modules
+frontend/.env
+
+# Keep these files
+!.gitkeep
+!.npmignore
+!.prettierignore
+!.eslintignore
+!.dockerignore 

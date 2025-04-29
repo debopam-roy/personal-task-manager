@@ -1,0 +1,63 @@
+{
+  "name": "personal-task-manager",
+  "version": "1.0.0",
+  "author": "Debopam Roy",
+  "private": true,  
+  "license": "UNLICENSED",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    
+    "test:watch": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run test:frontend:watch\" \"npm run test:backend:watch\"",
+    "test:frontend:watch": "cd frontend && npm run test:watch",
+    "test:backend:watch": "cd backend && npm run test:watch",
+    
+    "test:coverage": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run test:frontend:coverage\" \"npm run test:backend:coverage\"",
+    "test:frontend:coverage": "cd frontend && npm run test:coverage",
+    "test:backend:coverage": "cd backend && npm run test:coverage",
+    
+    "test:e2e": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run test:frontend:e2e\" \"npm run test:backend:e2e\"",
+    "test:frontend:e2e": "cd frontend && npm run test:e2e",
+    "test:backend:e2e": "cd backend && npm run test:e2e",
+    
+    "test:debug": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run test:frontend:debug\" \"npm run test:backend:debug\"",
+    "test:frontend:debug": "cd frontend && npm run test:debug",
+    "test:backend:debug": "cd backend && npm run test:debug",
+    
+    "lint": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run lint:frontend\" \"npm run lint:backend\"",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prepare": "husky install",
+    
+    "typecheck": "concurrently --names \"FRONTEND,BACKEND\" -c \"cyan.bold,green.bold\" \"npm run typecheck:frontend\" \"npm run typecheck:backend\"",
+    "typecheck:frontend": "cd frontend && npm run typecheck",
+    "typecheck:backend": "cd backend && npm run typecheck"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
