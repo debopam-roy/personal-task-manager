@@ -1,21 +1,20 @@
 {
-    "suggestions": [
-      {
-        "trigger": "generate login feature",
-        "prompt": "Create a secure login page using React, TypeScript, TailwindCSS, and Supabase Auth. Use shadcn/ui components for the form. Validate email/password, handle loading/error states, and add JSDoc comments."
-      },
-      {
-        "trigger": "test API client",
-        "prompt": "Write unit tests for a Supabase API service using Vitest. Mock Supabase client, check all expected inputs/outputs, and use MSW for integration."
-      },
-      {
-        "trigger": "create reusable button",
-        "prompt": "Build a reusable Button component using shadcn/ui and Tailwind. Support variants (primary, secondary), sizes, and accessibility roles. Add storybook stories and test interactions."
-      },
-      {
-        "trigger": "lazy load routes",
-        "prompt": "Set up route-based code-splitting using React Router v6. Use React.lazy and Suspense to lazy load pages in pages/ directory."
-      }
-    ]
-  }
-  
+  "suggestions": [
+    {
+      "trigger": "generate login feature",
+      "prompt": "Create a secure login page using React, TypeScript, TailwindCSS, and Supabase Auth. Use shadcn/ui components for the form. Validate email/password, handle loading/error states, and add JSDoc comments."
+    },
+    {
+      "trigger": "test API client",
+      "prompt": "Write unit tests for a Supabase API service using Vitest. Mock Supabase client, check all expected inputs/outputs, and use MSW for integration."
+    },
+    {
+      "trigger": "create reusable button",
+      "prompt": "Build a reusable Button component using shadcn/ui and Tailwind. Support variants (primary, secondary), sizes, and accessibility roles. Add storybook stories and test interactions."
+    },
+    {
+      "trigger": "lazy load routes",
+      "prompt": "Set up route-based code-splitting using React Router v6. Use React.lazy and Suspense to lazy load pages in pages/ directory."
+    }
+  ]
+}

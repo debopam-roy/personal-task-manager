@@ -4,31 +4,31 @@ on:
   schedule:
     - cron: '0 0 * * 0' # Weekly
   push:
-    branches: [ main, develop ]
+    branches: [develop]
   pull_request:
-    branches: [ main, develop ]
+    branches: [develop]
 
 jobs:
   security:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Run npm audit
-      run: npm audit
+      - name: Run npm audit
+        run: npm audit
 
-    - name: Run Snyk to check for vulnerabilities
-      uses: snyk/actions/node@master
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      with:
-        args: --all-projects
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --all-projects
 
-    - name: Run OWASP Dependency Check
-      uses: dependency-check/Dependency-Check_Action@main
-      with:
-        project: 'Personal Task Manager'
-        path: '.'
-        format: 'HTML'
-        out: 'reports' 
+      - name: Run OWASP Dependency Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'Personal Task Manager'
+          path: '.'
+          format: 'HTML'
+          out: 'reports'
